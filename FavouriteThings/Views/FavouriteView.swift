@@ -14,10 +14,14 @@ struct FavouriteView: View {
         
         HStack {
             Image(providedFavourite.image)
+                .resizable()
+                .scaledToFill()
+                .frame(width: 100, height: 100)
             VStack{
                 Text(providedFavourite.name)
-                    .font(.headline).fontWeight(.bold)
+                    .font(.title).fontWeight(.bold)
                 Text(providedFavourite.reason)
+                    .font(.custom("Small Text", fixedSize: 12))
             }
         }
     }

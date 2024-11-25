@@ -20,4 +20,4 @@ let mikko = FavouriteThing(id: 2, name: "Mikko", reason: "My dad is one of the m
 let kelley = FavouriteThing(id: 3, name: "Kelley", reason: "My mother is the sweetes and kindest person ever, she takes great care of all us boys never grows too impatient with us and always makes sure we are happy and loved. I could never imagine growing up without her love and support she is the reasoon I never give up on myself.", image: "momView")
 let myself = FavouriteThing(id: 4, name: "Hannu",  reason: "Now although putting myself in here might seem self centerd at first, I belive it is important to be greatful for yourself and value the things you do and the effort you put into them. I am thankful for all of the lessons I have learned, I value that I have the ability to work hard each day and be patient for results.", image: "selfView")
 
-let favouritThings = [hockey, mikko, kelley, myself]
+let favouriteThings = [hockey, mikko, kelley, myself]

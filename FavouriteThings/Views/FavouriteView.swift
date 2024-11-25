@@ -17,6 +17,7 @@ struct FavouriteView: View {
                 .resizable()
                 .scaledToFill()
                 .frame(width: 100, height: 100)
+                .clipped()
             VStack{
                 Text(providedFavourite.name)
                     .font(.title).fontWeight(.bold)

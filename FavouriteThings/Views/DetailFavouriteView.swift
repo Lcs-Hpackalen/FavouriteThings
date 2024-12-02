@@ -1,4 +1,12 @@
 //
+//  DetailFavouriteView 2.swift
+//  FavouriteThings
+//
+//  Created by Hannu Packalen on 2024-11-25.
+//
+
+
+//
 //  DetailFavouriteView.swift
 //  FavouriteThings
 //
@@ -14,26 +22,32 @@ struct DetailFavouriteView: View {
     //Mark: Computed Properties
     var body: some View {
         VStack{
-            
-            HStack {
                 Image(favouriteToShow.image)
                     .resizable()
                     .scaledToFill()
-                    .frame(width: 100, height: 100)
-                    .clipped()
-                VStack{
-                    Text(favouriteToShow.name)
-                        .font(.title).fontWeight(.bold)
-                    Text(favouriteToShow.reason)
-                        .font(.custom("Small Text", fixedSize: 12))
+                    .frame(width: 200, height: 200)
+            HStack{
+                Text ("Favourite Thing:")
+                    .fontWeight(.bold)
+                    .font(.title)
+                Text(favouriteToShow.name)
+                    .font(.title2).fontWeight(.bold)
+                Spacer()
+            }
+            .padding()
+            HStack{
+                Text("My why:")
+                    .font(.title).fontWeight(.bold)
+                Spacer()
+            }
+            
+                Text(favouriteToShow.reason)
+                    .font(.custom("Small Text", fixedSize: 15))
+            Spacer()
+        }
                 }
             }
-        }
-    }
-
-        
-    }
-
 #Preview {
     DetailFavouriteView(favouriteToShow: hockey)
 }
+

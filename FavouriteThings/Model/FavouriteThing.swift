@@ -10,7 +10,7 @@ import SwiftUICore
 
 struct FavouriteThing: Identifiable {
     var id: Int
-    var name: String
+    let name: String
     let reason: String
     let image: String
 }
